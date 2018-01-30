@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>codingtrain1</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="fireflies.js"></script>
+	<script src="constellation.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+
+			display:block;
+		}
+		canvas {
+			margin:auto;
+			position:fixed;
+                        left:0;
+                        top:0;
+                        z-index:-1;
+		}
+		.myCanvas canvas{position:relative;z-index:1}
+		div {
+                    display: inline-block;
+                }
+                .row {
+                      display: flex;
+                      flex-wrap: wrap;
+                      padding: 0 4px;
+                     margin:50px;
+                     align-content: space-between;
+                    }
+                    .column {
+                      flex: 50%;
+                      padding: 0 4px;
+                    }
+                    
+                    .column img {
+                      margin-top: 8px;
+                      vertical-align: middle;
+                      width:20%;
+                      height:20%;
+                    }
+		.caption{
+		         position: absolute;
+                         left: 0;
+                         top: 50%;
+                         width: 100%;
+                         text-align: center;
+                         color: #000;
+                 }
+                 .caption span.border {
+                          background-color: #111;
+                          color: #fff;
+                          padding: 18px;
+                          font-size: 4vw;
+
+                          letter-spacing: 10px;
+                  }
+                  .bgimg {
+                         height:300px;
+                      min-height: 100%;
+                      width:100%;
+                      position: relative;
+                      opacity: 0.65;
+                  }
+	</style>
+</head>
+<body>
+      <div class="bgimg">
+      <div class="caption">
+           <span class="border">CONSTELLATIONS</span>
+      </div>
+      </div>
+      <div style="
+    opacity: 0.65;color:#777;margin:50px;background-color:white; text-align:center; padding:50px 80px; text-align:justify;">
+           <h3 style="font-size:2.5vw; text-align:center;">Constellations</h3>
+           <p style="font-size:2.5vw;">A group of stars forming a recognizable pattern that is traditionally named after its apparent form or identified with a mythological figure.
+            </p>
+      </div >
+    <div class="myCanvas" id="ursaMinor" style="height:auto; width:100%;text-align:center; margin:auto"></div>
+    <div class="myCanvas" id="ursaMajor" style="height:auto; width:100%;text-align:center; margin:auto"></div>
+    <div class="myCanvas" id="hercules" style="height:auto; width:100%;text-align:center; margin:auto"></div>
+    <div class="myCanvas" id="orion" style="height:auto; width:100%;text-align:center; margin:auto"></div>
+
+   
+</body>
+</html>
